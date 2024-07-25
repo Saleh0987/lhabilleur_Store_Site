@@ -1,0 +1,36 @@
+.footer{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background: var(--primary-color);
+}
+
+.footer__text{
+  line-height: 30px;
+  color: #fff;
+}
+
+.list-group-item {
+  background-color: transparent !important;
+  color: rgb(255, 255, 255, 0.735);
+}
+
+.quick__links-title{
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.footer__contact span{
+  font-size: 1.3rem;
+}
+
+.footer__contact p{
+  font-size: 0.9rem;
+}
+
+.footer__copyright{
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  text-align: center;
+}
