@@ -11,7 +11,6 @@ const Layout = () => {
     <Header/>
     <Routers />
     </div>
-
     <Footer />
   </>
   );
