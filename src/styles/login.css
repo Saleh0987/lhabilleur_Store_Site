@@ -1,31 +1,32 @@
-.log{
+.log {
   padding: 10px 0px;
 }
 
-.auth__form{
+.auth__form {
   background: var(--primary-color);
   padding: 20px;
   border-radius: 5px;
 }
 
-.auth__btn{
+.auth__btn {
   background: #fff !important;
   color: var(--primary-color);
   font-weight: 600;
-  padding: 10px 15px;
+  margin: auto;
+  padding: 10px 30px;
   border: none;
   border-radius: 8px;
 }
 
-.auth__form p{
+.auth__form p {
   margin-top: 10px;
 }
 
-.auth__form p a{
+.auth__form p a {
   color: rgba(255, 255, 255, 0.735);
 }
 
-.auth__form input[type='file']{
+.auth__form input[type="file"] {
   color: #fff;
   cursor: pointer;
 }
@@ -36,7 +37,6 @@
 .password-input input {
   width: 100%;
   padding-right: 40px;
-  /* Space for the icon */
 }
 
 .toggle-password {
@@ -48,7 +48,8 @@
   border: none;
   cursor: pointer;
   color: var(--primary-color);
-}.password-input {
+}
+.password-input {
   position: relative;
 }
 

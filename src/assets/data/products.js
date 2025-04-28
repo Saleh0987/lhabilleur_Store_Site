@@ -24,7 +24,6 @@ import productImg20 from "../images/watch-02.jpg";
 import productImg21 from "../images/watch-03.jpg";
 import productImg26 from "../images/watch-5.jpg";
 
-
 import productImg23 from "../images/wireless-01.png";
 
 import productImg25 from "../images/wireless-03.png";
@@ -96,7 +95,7 @@ const products = [
   },
   {
     id: "26",
-    productName: "Rivet Bigelow Modern ",
+    productName: "New Rivet Bigelow Modern ",
     imgUrl: productImg02,
     category: "sofa",
     price: 253,

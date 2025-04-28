@@ -48,6 +48,7 @@ h2 {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -55,15 +56,22 @@ a {
   color: unset;
 }
 
-img{
+img {
   width: 100%;
 }
 
-section{
+section {
   padding: 60px 0px;
 }
 
-.section__tilte{
+.section__tilte {
   color: var(--primary-color);
   font-weight: 600;
+}
+
+.main {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

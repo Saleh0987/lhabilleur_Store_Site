@@ -1,11 +1,118 @@
-.table tr td img{
-  width: 80px !important;
-  height: 80px!important;
-  object-fit: cover;
+/* Table Container */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-td i{cursor: pointer;}
+/* Table Headers */
+.table thead {
+  background-color: var(--primary-color);
+  color: #fff;
+}
 
-td, th{
+.table th {
+  padding: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* Table Cells */
+.table td {
+  padding: 12px;
+  vertical-align: middle;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 14px;
   color: var(--primary-color);
+  text-align: center;
+}
+
+/* Image Styling */
+.table td img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Delete Icon */
+.table td i {
+  cursor: pointer;
+  font-size: 18px;
+  color: #dc3545;
+  transition: color 0.2s ease;
+}
+
+.table td i:hover {
+  color: #a71d2a;
+}
+
+/* Quantity and Price */
+.table td:nth-child(3),
+.table td:nth-child(4) {
+  font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .table th,
+  .table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .table td img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+
+  /* Truncate productName to two words with ellipsis */
+  .table td:nth-child(2) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px; /* Adjust based on your layout */
+  }
+}
+
+/* Subtotal Section */
+.subtotal-section {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.subtotal-section h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.subtotal-section p {
+  color: #6c757d;
+  font-size: 14px;
+  margin: 15px 0px;
+}
+
+/* Buttons */
+.buy__btn {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: #0a1d37;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.buy__btn:hover {
+  background-color: #030f1f;
 }

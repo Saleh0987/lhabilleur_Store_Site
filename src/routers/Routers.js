@@ -6,7 +6,6 @@ import ProductDetails from "../pages/ProductDetails";
 import Checkout from "../pages/Checkout";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
-import ProtectedRoute from "./ProtectedRoute"; // import the ProtectedRoute
 import NotFound from "../pages/NotFound";
 
 const Routers = () => {
@@ -16,14 +15,11 @@ const Routers = () => {
       <Route path="signup" element={<Signup />} />
       <Route path="*" element={<NotFound />} />
 
-      {/* Protected Routes */}
-      <Route element={<ProtectedRoute />}>
-        <Route path="/" element={<Home />} />
-        <Route path="shop" element={<Shop />} />
-        <Route path="shop/:id" element={<ProductDetails />} />
-        <Route path="cart" element={<Cart />} />
-        <Route path="checkout" element={<Checkout />} />
-      </Route>
+      <Route index={true} element={<Home />} />
+      <Route path="shop" element={<Shop />} />
+      <Route path="shop/:id" element={<ProductDetails />} />
+      <Route path="cart" element={<Cart />} />
+      <Route path="checkout" element={<Checkout />} />
     </Routes>
   );
 };
